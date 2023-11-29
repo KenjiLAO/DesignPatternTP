@@ -1,7 +1,4 @@
-﻿using System.Text.Json;
-using System.Text.Json.Nodes;
-
-UsineLivre livreFactory = new UsineLivre();
+﻿UsineLivre livreFactory = new UsineLivre();
 
 Livre livre1 = livreFactory.CreerLivre();
 livre1.titre = "Comment aller aux toilettes";
@@ -19,7 +16,7 @@ Console.WriteLine("Bibliothèque :");
 bibliotheque.AfficherLivre();
 
 CommandeLivre commandeLivraison = new CommandeLivre();
-Commande commande = new Commande { livre = livre1, Quantite = 3, AdresseLivraison = "Quarante-douze Rue de la pet" };
+Commande commande = new Commande { livre = livre2, Quantite = 3, AdresseLivraison = "Quarante-douze Rue de la pet" };
 commandeLivraison.CommanderLivre(commande);
 
 Auteur auteur = new Auteur { Nom = "Jean", Prenom = "Dupont"};
@@ -28,11 +25,13 @@ Client client = new Client { Nom = "Alice", Prenom = "Portier", Mail = "aportier
 auteur.AjouterAbonne(client);
 auteur.NotifierAbonnes();
 
-DataToJSON jsonManager = new DataToJSON();
+JsonFormat jsonManager = new JsonFormat();
 jsonManager.SauvegarderEnJson(commande, "commande.json");
 jsonManager.SauvegarderEnJson(bibliotheque, "bibliotheque.json");
 
-Bibliotheque bibliothequeChargee = jsonManager.ChargerDepuisJson<Bibliotheque>("bibliotheque.json");
+Commande commande1 = jsonManager.ChargerDepuisJson<Commande>("commande.json");
 
-Console.WriteLine("Bibliothèque Chargée depuis JSON:");
-bibliothequeChargee?.AfficherLivre();
+Console.WriteLine("Bibliothèque Chargée depuis JSON: ");
+Console.WriteLine(commande1.livre.titre);
+Console.WriteLine(commande1.Quantite);
+Console.WriteLine(commande1.AdresseLivraison);

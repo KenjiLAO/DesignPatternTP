@@ -1,6 +1,6 @@
 using System.Text.Json;
 
-public class DataToJSON
+public class JsonFormat
 {
     public void SauvegarderEnJson<T>(T objet, string chemin)
     {
