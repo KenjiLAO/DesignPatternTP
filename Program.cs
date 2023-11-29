@@ -51,3 +51,5 @@ if (commande1 != null) {
     Console.WriteLine("Quantité commandée : " + commande1.Quantite);
     Console.WriteLine("Adresse de livraison : " + commande1.AdresseLivraison);
 }
+
+//TODO : Ajouter de nouvelles données pour vérifier l'intégrité des données des fichier JSON
