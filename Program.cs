@@ -1,4 +1,6 @@
-﻿UsineLivre livreFactory = new UsineLivre();
+﻿using System.Text.Json;
+
+UsineLivre livreFactory = new UsineLivre();
 
 Livre livre1 = livreFactory.CreerLivre();
 livre1.titre = "Comment aller aux toilettes";
@@ -16,7 +18,7 @@ Console.WriteLine("Bibliothèque :");
 bibliotheque.AfficherLivre();
 
 CommandeLivre commandeLivraison = new CommandeLivre();
-Commande commande = new Commande { livre = livre2, Quantite = 3, AdresseLivraison = "Quarante-douze Rue de la pet" };
+Commande commande = new Commande { livre = livre1, Quantite = 3, AdresseLivraison = "Quarante-douze Rue de la pet" };
 commandeLivraison.CommanderLivre(commande);
 
 Auteur auteur = new Auteur { Nom = "Jean", Prenom = "Dupont"};
@@ -24,3 +26,6 @@ Client client = new Client { Nom = "Alice", Prenom = "Portier", Mail = "aportier
 
 auteur.AjouterAbonne(client);
 auteur.NotifierAbonnes();
+
+DataToJSON jsonManager = new DataToJSON();
+jsonManager.SauvegarderEnJson(commande, "commande.json");
