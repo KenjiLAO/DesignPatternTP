@@ -1,15 +1,15 @@
 public class Bibliotheque
 {
-    private List<Livre> _livres = new List<Livre>();
+    private List<Livre> livres = new List<Livre>();
 
     public void AjouterLivre(Livre livre)
     {
-        _livres.Add(livre);
+        livres.Add(livre);
     }
 
-    public void Afficher()
+    public void AfficherLivre()
     {
-        foreach (var livre in _livres)
+        foreach (var livre in livres)
         {
             livre.Afficher();
         }

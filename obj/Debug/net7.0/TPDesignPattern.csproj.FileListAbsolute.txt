@@ -1,0 +1,15 @@
+C:\Users\theye\TPDesignPattern\bin\Debug\net7.0\TPDesignPattern.exe
+C:\Users\theye\TPDesignPattern\bin\Debug\net7.0\TPDesignPattern.deps.json
+C:\Users\theye\TPDesignPattern\bin\Debug\net7.0\TPDesignPattern.runtimeconfig.json
+C:\Users\theye\TPDesignPattern\bin\Debug\net7.0\TPDesignPattern.dll
+C:\Users\theye\TPDesignPattern\bin\Debug\net7.0\TPDesignPattern.pdb
+C:\Users\theye\TPDesignPattern\obj\Debug\net7.0\TPDesignPattern.csproj.AssemblyReference.cache
+C:\Users\theye\TPDesignPattern\obj\Debug\net7.0\TPDesignPattern.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\theye\TPDesignPattern\obj\Debug\net7.0\TPDesignPattern.AssemblyInfoInputs.cache
+C:\Users\theye\TPDesignPattern\obj\Debug\net7.0\TPDesignPattern.AssemblyInfo.cs
+C:\Users\theye\TPDesignPattern\obj\Debug\net7.0\TPDesignPattern.csproj.CoreCompileInputs.cache
+C:\Users\theye\TPDesignPattern\obj\Debug\net7.0\TPDesignPattern.dll
+C:\Users\theye\TPDesignPattern\obj\Debug\net7.0\refint\TPDesignPattern.dll
+C:\Users\theye\TPDesignPattern\obj\Debug\net7.0\TPDesignPattern.pdb
+C:\Users\theye\TPDesignPattern\obj\Debug\net7.0\TPDesignPattern.genruntimeconfig.cache
+C:\Users\theye\TPDesignPattern\obj\Debug\net7.0\ref\TPDesignPattern.dll

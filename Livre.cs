@@ -1,10 +1,10 @@
 public class Livre
 {
-    public string Titre { get; set; }
-    public string Auteur { get; set; }
+    public string titre { get; set; }
+    public string auteur { get; set; }
 
     public void Afficher()
     {
-        Console.WriteLine($"Livre : {Titre} par {Auteur}");
+        Console.WriteLine($"Livre : {titre} par {auteur}");
     }
 }

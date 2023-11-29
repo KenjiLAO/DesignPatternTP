@@ -3,6 +3,7 @@ public class Auteur : IAbonnement
     private List<IAbonne> _abonnes = new List<IAbonne>();
 
     public string Nom { get; set; }
+    public string Prenom { get; set; }
 
     public void AjouterAbonne(IAbonne abonne)
     {
