@@ -1,4 +1,5 @@
 ﻿using System.Text.Json;
+using System.Text.Json.Nodes;
 
 UsineLivre livreFactory = new UsineLivre();
 
@@ -29,3 +30,9 @@ auteur.NotifierAbonnes();
 
 DataToJSON jsonManager = new DataToJSON();
 jsonManager.SauvegarderEnJson(commande, "commande.json");
+jsonManager.SauvegarderEnJson(bibliotheque, "bibliotheque.json");
+
+Bibliotheque bibliothequeChargee = jsonManager.ChargerDepuisJson<Bibliotheque>("bibliotheque.json");
+
+Console.WriteLine("Bibliothèque Chargée depuis JSON:");
+bibliothequeChargee?.AfficherLivre();
